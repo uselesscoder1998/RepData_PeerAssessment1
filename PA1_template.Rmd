@@ -39,6 +39,7 @@ We now plot
 ```{r averageplot, echo=TRUE}
 plot(x=averagesteps$interval,y=averagesteps$averagesteps,type="l",xlab="Interval",ylab="Average number of steps",main="Average number of steps for each interval per day")
 ```
+  
   Now we find the maximum average steps and the corresponding interval, I've used the tapply function
 ```{r maxaveragesteps,echo=TRUE}
 maxstepsinterval<-tapply(averagesteps$interval,averagesteps$averagesteps,FUN=max)
